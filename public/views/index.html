@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="twitterApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Handle Generator</title>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.js"></script>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body  ng-controller="twitterController">
+    <h2>Make some Twitter handles!</h2>
+    <button class="doIt"  ng-click="makeTwits()">~ Do It Now! ~</button>
+    <ul>
+        <li ng-repeat="name in list">{{name}} - twitter link: <a ng-href="https://twitter.com/{{name}}" target="_blank">https://twitter.com/{{name}}</a></li>
+    </ul>
+</body>
+</html>
