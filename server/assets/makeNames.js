@@ -16,13 +16,13 @@ function combineWords() {
         var numOne = randomNumber(-0.5, 9.49);
         var numTwo = randomNumber(-0.5, 9.49);
 
-        namesDone.push(adjectives.adjective[numOne] + ' ' + nouns.noun[numTwo]);
+        namesDone.push(adjectives.adjective[numOne] + nouns.noun[numTwo]);
     }
 
     return namesDone;
 }
 
-module.exports = combineWords();
+module.exports = combineWords;
 
 
 function randomNumber(min, max) {

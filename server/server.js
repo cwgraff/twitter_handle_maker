@@ -12,10 +12,9 @@ app.use(express.static('public'));
 
 
 app.use('/', index);
-//app.use('/getWords', getWords);
 
 app.get("/getWords", function(request, response){
-    response.send(sendNames);
+    response.send(sendNames());
     //response.send('Get words router working!');
 });
 

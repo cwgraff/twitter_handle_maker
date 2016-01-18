@@ -1,5 +1,6 @@
 body {
     background-color: #55acee;
+    font-family:"Helvetica", "Arial", sans-serif;
 }
 
 button {
@@ -7,5 +8,21 @@ button {
 }
 
 li {
-    padding: 5px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a {
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
 }
