@@ -11,7 +11,7 @@
     <h2>Make some Twitter handles!</h2>
     <button class="doIt"  ng-click="makeTwits()">~ Do It Now! ~</button>
     <ul>
-        <li ng-repeat="name in list" class="bold">{{'@' + name}} - link: <a ng-href="https://twitter.com/{{name}}" target="_blank">https://twitter.com/{{name}}</a></li>
+        <li ng-repeat="name in list track by $index" class="bold">{{'@' + name}} - link: <a ng-href="https://twitter.com/{{name}}" target="_blank">https://twitter.com/{{name}}</a></li>
     </ul>
 </body>
 </html>

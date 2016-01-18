@@ -10,11 +10,12 @@ var namesDone = [];
 
 function combineWords() {
 
+
     namesDone = [];
 
     for (var i = 0; i < 10; i++) {
-        var numOne = randomNumber(-0.5, 9.49);
-        var numTwo = randomNumber(-0.5, 9.49);
+        var numOne = randomNumber(0, 10);
+        var numTwo = randomNumber(0, 10);
 
         namesDone.push(adjectives.adjective[numOne] + nouns.noun[numTwo]);
     }
@@ -26,5 +27,5 @@ module.exports = combineWords;
 
 
 function randomNumber(min, max) {
-    return Math.round(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min) + min);
 }
